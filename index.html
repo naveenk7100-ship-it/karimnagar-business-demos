@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karimnagar Commercial Showcase | Premier Business Directory</title>
-  <meta name="description" content="Discover verified premium local businesses, artisan studios, restaurants, and educational centres across Karimnagar, Telangana.">
+  <title>Karimnagar Commercial Showcase | Digital Demonstration Hub</title>
+  <meta name="description" content="Independent concept showcase featuring bespoke modern digital experiences for local businesses in Karimnagar, Telangana.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
@@ -26,17 +26,17 @@
       color: var(--text);
       font-family: 'Plus Jakarta Sans', sans-serif;
       line-height: 1.6;
-      padding: 60px 20px 100px;
+      padding: clamp(40px, 6vw, 70px) clamp(20px, 4vw, 40px) 100px;
     }
-    .container { max-width: 1140px; margin: 0 auto; }
-    header { text-align: center; margin-bottom: 56px; }
+    .container { max-width: 1320px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 48px; }
     .badge {
       display: inline-block;
       font-size: 0.8rem;
       background: rgba(56, 189, 248, 0.12);
       color: var(--primary);
       border: 1px solid rgba(56, 189, 248, 0.25);
-      padding: 6px 16px;
+      padding: 6px 18px;
       border-radius: 30px;
       font-weight: 700;
       letter-spacing: 1px;
@@ -44,22 +44,35 @@
       margin-bottom: 16px;
     }
     h1 {
-      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-size: clamp(2.2rem, 3.8vw, 3.2rem);
       font-weight: 800;
       color: #fff;
       letter-spacing: -0.5px;
       margin-bottom: 16px;
+      text-wrap: balance;
     }
     p.subtitle {
       color: var(--text-muted);
-      font-size: 1.15rem;
-      max-width: 680px;
+      font-size: clamp(1rem, 1.2vw, 1.2rem);
+      max-width: 740px;
       margin: 0 auto;
+    }
+    .disclaimer-banner {
+      max-width: 820px;
+      margin: 24px auto 0;
+      padding: 14px 22px;
+      background: rgba(56, 189, 248, 0.07);
+      border: 1px solid rgba(56, 189, 248, 0.22);
+      border-radius: 10px;
+      font-size: 0.85rem;
+      color: #94a3b8;
+      line-height: 1.5;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 28px;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr));
+      gap: clamp(20px, 2.5vw, 32px);
+      margin-top: 48px;
     }
     .card {
       background: var(--surface);
@@ -85,19 +98,28 @@
       text-transform: uppercase;
       letter-spacing: 1.2px;
       color: var(--accent);
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     .card h3 {
       color: #fff;
       font-size: 1.3rem;
       font-weight: 700;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
+    }
+    .card-location {
+      font-size: 0.82rem;
+      color: var(--primary);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
     }
     .card p {
       color: var(--text-muted);
       font-size: 0.92rem;
       margin-bottom: 22px;
       flex: 1;
+      line-height: 1.55;
     }
     .card-footer {
       display: flex;
@@ -113,18 +135,22 @@
       text-align: center;
       margin-top: 80px;
       color: var(--text-muted);
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       border-top: 1px solid var(--border);
       padding-top: 32px;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="badge">Karimnagar, Telangana</div>
-      <h1>Premier Commercial Directory & Showcase</h1>
-      <p class="subtitle">Curated verified businesses, high-craft digital portfolios, and seamless direct customer communication.</p>
+      <div class="badge">Concept Design Showcase</div>
+      <h1>Karimnagar Commercial Experience Hub</h1>
+      <p class="subtitle">Independent concept prototypes and interactive digital demonstrations developed for premier local businesses across Karimnagar, Telangana.</p>
+      <div class="disclaimer-banner">
+        ℹ️ <strong>Demonstration Showcase:</strong> These pages are independent digital design concepts created to showcase modern responsive layouts, bespoke category typography, and interactive WhatsApp communication. All brand names and trademarks belong to their respective local business owners.
+      </div>
     </header>
 
     <div class="grid">
@@ -133,10 +159,11 @@
           <div>
             <div class="card-cat">Salons, Spas & Tattoo Studios</div>
             <h3>Hair Lounge Salon & Tattoo Studio</h3>
-            <p>No dedicated website. Active social presence with lost leads due to lack of online appointment booking, digital tattoo flash catalog, and service rate cards.</p>
+            <div class="card-location">📍 Court Road / Geetha Bhavan</div>
+            <p>Luxury salon styling, precision beard grooming, and custom tattoo consultations with direct WhatsApp booking.</p>
           </div>
           <div class="card-footer">
-            <span>Explore Experience</span>
+            <span>View Concept Demo</span>
             <span>→</span>
           </div>
         </a>
@@ -145,10 +172,11 @@
           <div>
             <div class="card-cat">Gyms & Fitness Centres</div>
             <h3>Star Fitness Gym AC</h3>
-            <p>Zero web presence. Operates strictly via walk-ins and phone calls. Missing BMI consultation lead magnets, trainer credentials, transformation galleries, and online membership passes.</p>
+            <div class="card-location">📍 Collectorate Road</div>
+            <p>Unisex air-conditioned gym featuring Olympic lifting platforms, personalized transformation coaching, and interactive BMI tools.</p>
           </div>
           <div class="card-footer">
-            <span>Explore Experience</span>
+            <span>View Concept Demo</span>
             <span>→</span>
           </div>
         </a>
@@ -157,10 +185,11 @@
           <div>
             <div class="card-cat">Wedding & Event Photography</div>
             <h3>Yashika Photography Studio</h3>
-            <p>No custom photography portfolio website. High-ticket wedding clients cannot view 4K cinematic showreels or check muhurtham calendar availability online.</p>
+            <div class="card-location">📍 Beside Volkswagen Showroom, Mankammathota</div>
+            <p>Cinematic 4K wedding films, authentic candid muhurtham moments, and interactive season date availability checker.</p>
           </div>
           <div class="card-footer">
-            <span>Explore Experience</span>
+            <span>View Concept Demo</span>
             <span>→</span>
           </div>
         </a>
@@ -169,10 +198,11 @@
           <div>
             <div class="card-cat">Furniture & Interior Stores</div>
             <h3>Pavan Furniture World</h3>
-            <p>No digital showroom. Modern home builders in Karimnagar have to visit physical showroom without being able to browse catalogs or request custom sofa/wardrobe quotes online.</p>
+            <div class="card-location">📍 Near Rajiv Chowk</div>
+            <p>Kiln-seasoned solid teak living collections, hydraulic storage beds, and showroom catalogue requests via WhatsApp.</p>
           </div>
           <div class="card-footer">
-            <span>Explore Experience</span>
+            <span>View Concept Demo</span>
             <span>→</span>
           </div>
         </a>
@@ -181,10 +211,11 @@
           <div>
             <div class="card-cat">Educational Coaching Centres & Junior Colleges</div>
             <h3>Sri Chaitanya Junior & Coaching College</h3>
-            <p>Lacks localized Karimnagar branch portal for entrance test preparation (EAPCET/NEET), digital syllabus download, and parent enquiry form.</p>
+            <div class="card-location">📍 Opp. Collectorate Office, Mukarampura</div>
+            <p>Integrated IIT-JEE, NEET Medical entrance curriculum tracks, and personalized academic counseling sessions.</p>
           </div>
           <div class="card-footer">
-            <span>Explore Experience</span>
+            <span>View Concept Demo</span>
             <span>→</span>
           </div>
         </a>
@@ -193,10 +224,11 @@
           <div>
             <div class="card-cat">Restaurants & Dining</div>
             <h3>Peacock Multi-Cuisine Family Restaurant</h3>
-            <p>No table reservation portal or direct WhatsApp food ordering. Heavy reliance on 30% aggregator commission apps.</p>
+            <div class="card-location">📍 Near Prathima Multiplex</div>
+            <p>Authentic Hyderabadi dum biryani, tandoori clay oven delicacies, and advance family dining table reservations.</p>
           </div>
           <div class="card-footer">
-            <span>Explore Experience</span>
+            <span>View Concept Demo</span>
             <span>→</span>
           </div>
         </a>
@@ -205,10 +237,11 @@
           <div>
             <div class="card-cat">Salons, Spas & Tattoo Studios</div>
             <h3>Famous Tattoos & Beauty Saloon</h3>
-            <p>No digital portfolio or aftercare guide. Heavy footfall area with customer drop-off due to missing appointment booking.</p>
+            <div class="card-location">📍 Near Eat And More, Fathepura</div>
+            <p>Custom fine-line tattoo art, clinical sterile single-use equipment protocol, and direct reference consultations.</p>
           </div>
           <div class="card-footer">
-            <span>Explore Experience</span>
+            <span>View Concept Demo</span>
             <span>→</span>
           </div>
         </a>
@@ -217,10 +250,11 @@
           <div>
             <div class="card-cat">Wedding & Event Photography</div>
             <h3>Sumasri Digital Photo Studio</h3>
-            <p>Traditional studio without digital muhurtham booking or 4K video teaser gallery for Telangana bridal clients.</p>
+            <div class="card-location">📍 Gandhi Chowk Commercial Zone</div>
+            <p>Studio portraiture, traditional milestone family portraits, and digital restoration of damaged heirloom photographs.</p>
           </div>
           <div class="card-footer">
-            <span>Explore Experience</span>
+            <span>View Concept Demo</span>
             <span>→</span>
           </div>
         </a>
@@ -229,10 +263,11 @@
           <div>
             <div class="card-cat">Bakeries & Cafes</div>
             <h3>La Delicious Bakery & Cafe</h3>
-            <p>Lacks direct custom cake pre-order form and live WhatsApp celebration booking portal.</p>
+            <div class="card-location">📍 Near Bus Station, Mukarampura</div>
+            <p>Oven-fresh pastries, artisanal celebration cakes, and interactive custom cake weight price estimator.</p>
           </div>
           <div class="card-footer">
-            <span>Explore Experience</span>
+            <span>View Concept Demo</span>
             <span>→</span>
           </div>
         </a>
@@ -240,8 +275,8 @@
     </div>
 
     <footer>
-      <p>© 2026 Karimnagar Commercial Showcase. All rights reserved.</p>
-      <p style="margin-top: 6px; font-size: 0.82rem;">Telangana Verified Local Business Ecosystem</p>
+      <p>© 2026 Karimnagar Commercial Showcase. Independent digital design concept portfolio.</p>
+      <p style="margin-top: 6px; font-size: 0.8rem; color: #64748b;">Built with modern responsive web standards, high-resolution visual curation, and direct client communication channels.</p>
     </footer>
   </div>
 </body>
